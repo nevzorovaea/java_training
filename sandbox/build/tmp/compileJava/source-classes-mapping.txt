@@ -1,2 +1,2 @@
-MyFirstProgramm.java
- MyFirstProgramm
+ru/Training/java_training/sandbox/MyFirstProgramm.java
+ ru.Training.java_training.sandbox.MyFirstProgramm
