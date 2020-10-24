@@ -1,2 +1,6 @@
+ru/Training/java_training/sandbox/Square.java
+ ru.Training.java_training.sandbox.Square
+ru/Training/java_training/sandbox/Rectangle.java
+ ru.Training.java_training.sandbox.Rectangle
 ru/Training/java_training/sandbox/MyFirstProgramm.java
  ru.Training.java_training.sandbox.MyFirstProgramm
