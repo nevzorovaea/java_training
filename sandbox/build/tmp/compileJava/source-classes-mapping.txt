@@ -2,9 +2,9 @@ ru/Training/java_training/sandbox/Rectangle.java
  ru.Training.java_training.sandbox.Rectangle
 ru/Training/java_training/sandbox/Square.java
  ru.Training.java_training.sandbox.Square
-ru/Training/java_training/sandbox/MyFirstProgramm.java
- ru.Training.java_training.sandbox.MyFirstProgramm
-ru/Training/java_training/sandbox/Distance.java
- ru.Training.java_training.sandbox.Distance
 ru/Training/java_training/sandbox/Point.java
  ru.Training.java_training.sandbox.Point
+ru/Training/java_training/sandbox/Distance.java
+ ru.Training.java_training.sandbox.Distance
+ru/Training/java_training/sandbox/MyFirstProgramm.java
+ ru.Training.java_training.sandbox.MyFirstProgramm
