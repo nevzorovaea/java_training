@@ -1,2 +1,0 @@
-ru/Training/java_training/sandbox/SquareTests.java
- ru.Training.java_training.sandbox.SquareTests
