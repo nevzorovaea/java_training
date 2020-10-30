@@ -4,6 +4,33 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-test" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../addressbook-web-test" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../addressbook-web-tests" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook.web.tests" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../addressbook.web.tests" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="delegatedBuild" value="true" />
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
@@ -11,6 +38,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../tests-web-addressbook" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../tests-web-addressbook" />
           </set>
         </option>
       </GradleProjectSettings>
