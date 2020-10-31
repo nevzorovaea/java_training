@@ -70,13 +70,52 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.CreationNewContact">
+    <configuration name="CreationNewContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.training.java_training.addressbook.CreationNewContact&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CreationNewContactTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.training.java_training.addressbook.CreationNewContactTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -98,6 +137,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CreationNewContact" />
+        <item itemvalue="Gradle.CreationNewContact" />
+        <item itemvalue="Gradle.CreationNewContactTest" />
+        <item itemvalue="Gradle.CreationNewContactTest" />
         <item itemvalue="Gradle.GroupCreationTests" />
       </list>
     </recent_temporary>
@@ -130,26 +173,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604057503386" />
-    <state width="1877" height="224" key="GridCell.Tab.0.bottom" timestamp="1604126073372">
+    <state width="1877" height="141" key="GridCell.Tab.0.bottom" timestamp="1604138665783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="220" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604062936077" />
-    <state width="1877" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604126073372" />
-    <state width="1877" height="224" key="GridCell.Tab.0.center" timestamp="1604126073372">
+    <state width="1877" height="141" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604138665783" />
+    <state width="1877" height="141" key="GridCell.Tab.0.center" timestamp="1604138665783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="220" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604062936077" />
-    <state width="1877" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604126073372" />
-    <state width="1877" height="224" key="GridCell.Tab.0.left" timestamp="1604126073372">
+    <state width="1877" height="141" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604138665783" />
+    <state width="1877" height="141" key="GridCell.Tab.0.left" timestamp="1604138665782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="220" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604062936077" />
-    <state width="1877" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604126073372" />
-    <state width="1877" height="224" key="GridCell.Tab.0.right" timestamp="1604126073372">
+    <state width="1877" height="141" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604138665782" />
+    <state width="1877" height="141" key="GridCell.Tab.0.right" timestamp="1604138665783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="220" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604062936077" />
-    <state width="1877" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604126073372" />
+    <state width="1877" height="141" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604138665783" />
     <state x="655" y="151" width="609" height="735" key="RefactorJ.IntroduceParameterObject" timestamp="1604125612354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -162,6 +205,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604057612937" />
+    <state x="776" y="298" key="chooseDestDirectoryDialog" timestamp="1604138545157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604138545157" />
     <state x="690" y="281" key="extract.method.dialog" timestamp="1604125307397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
