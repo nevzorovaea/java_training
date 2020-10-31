@@ -50,6 +50,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -77,7 +84,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.CreationNewContact">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.training.java_training.addressbook" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.GroupDeletionTests">
     <configuration name="CreationNewContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -135,13 +147,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GroupDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.training.java_training.addressbook.GroupDeletionTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupDeletionTests" />
         <item itemvalue="Gradle.CreationNewContact" />
         <item itemvalue="Gradle.CreationNewContact" />
         <item itemvalue="Gradle.CreationNewContactTest" />
         <item itemvalue="Gradle.CreationNewContactTest" />
-        <item itemvalue="Gradle.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -169,38 +200,42 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="284" y="492" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1604175203395">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="284" y="492" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604175203395" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1604057503386">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604057503386" />
-    <state width="1877" height="185" key="GridCell.Tab.0.bottom" timestamp="1604171955315">
+    <state width="1877" height="185" key="GridCell.Tab.0.bottom" timestamp="1604176005166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="220" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604062936077" />
-    <state width="1877" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604171955315" />
-    <state width="1877" height="185" key="GridCell.Tab.0.center" timestamp="1604171955315">
+    <state width="1877" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604176005166" />
+    <state width="1877" height="185" key="GridCell.Tab.0.center" timestamp="1604176005166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="220" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604062936077" />
-    <state width="1877" height="185" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604171955315" />
-    <state width="1877" height="185" key="GridCell.Tab.0.left" timestamp="1604171955315">
+    <state width="1877" height="185" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604176005166" />
+    <state width="1877" height="185" key="GridCell.Tab.0.left" timestamp="1604176005166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="220" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604062936077" />
-    <state width="1877" height="185" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604171955315" />
-    <state width="1877" height="185" key="GridCell.Tab.0.right" timestamp="1604171955315">
+    <state width="1877" height="185" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604176005166" />
+    <state width="1877" height="185" key="GridCell.Tab.0.right" timestamp="1604176005166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="220" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604062936077" />
-    <state width="1877" height="185" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604171955315" />
+    <state width="1877" height="185" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604176005166" />
     <state x="284" y="197" width="609" height="746" key="RefactorJ.IntroduceParameterObject" timestamp="1604171877139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="284" y="197" width="609" height="746" key="RefactorJ.IntroduceParameterObject/0.0.1920.1040@0.0.1920.1040" timestamp="1604171877139" />
-    <state x="775" y="454" key="ReplaceDuplicatesPrompt" timestamp="1604168914617">
+    <state x="399" y="533" key="ReplaceDuplicatesPrompt" timestamp="1604174763388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="775" y="454" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1604168914617" />
+    <state x="399" y="533" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1604174763388" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1604057612937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -209,9 +244,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604138545157" />
-    <state x="819" y="291" key="extract.method.dialog" timestamp="1604168890586">
+    <state x="282" y="340" key="extract.method.dialog" timestamp="1604175176812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="819" y="291" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604168890586" />
+    <state x="282" y="340" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604175176812" />
+    <state x="344" y="203" width="585" height="801" key="find.popup" timestamp="1604176005023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="344" y="203" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604176005023" />
+    <state x="179" y="477" key="refactoring.ChangeSignatureDialog" timestamp="1604175304810">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="179" y="477" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604175304810" />
   </component>
 </project>
