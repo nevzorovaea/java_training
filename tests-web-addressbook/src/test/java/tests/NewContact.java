@@ -1,4 +1,4 @@
-package ru.training.java_training.addressbook;
+package tests;
 
 public class NewContact {
   private final String firstname;

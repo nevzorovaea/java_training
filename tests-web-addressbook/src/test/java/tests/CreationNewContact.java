@@ -1,4 +1,4 @@
-package ru.training.java_training.addressbook;
+package tests;
 
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
