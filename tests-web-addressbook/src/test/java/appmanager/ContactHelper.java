@@ -35,9 +35,7 @@ public class ContactHelper extends HelperBase {
     type(By.name("nickname"), newContact.getNickname());
     type(By.name("company"), newContact.getCompany());
     type(By.name("address"), newContact.getAddress());
-    click(By.name("theform"));
     type(By.name("home"), newContact.getHomephone());
-    click(By.name("theform"));
     type(By.name("mobile"), newContact.getMobile());
     type(By.name("work"), newContact.getWorkphone());
     type(By.name("email"), newContact.getEmail());
@@ -48,7 +46,7 @@ public class ContactHelper extends HelperBase {
     new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(newContact.getBmonth());
     click(By.name("bmonth"));
     type(By.name("byear"), newContact.getByear());
-    click(By.name("theform"));
+
   }
 
   public void addNewContact() {
@@ -65,4 +63,11 @@ public class ContactHelper extends HelperBase {
     click(By.name("selected[]"));
   }
 
+  public void initContactModification() {
+    click(By.xpath("//img[@alt='Edit']"));
+  }
+
+  public void submitContactModification() {
+    click(By.xpath("//div[@id='content']/form/input[22]"));
+  }
 }
