@@ -1,14 +1,15 @@
 package appmanager;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
   FirefoxDriver wd;
+
+  protected NavigationHelper navigationHelper;
+  protected ContactHelper contactHelper;
   private SessionHelper sessionHelper;
-  private NavigationHelper navigationHelper;
   private GroupHelper groupHelper;
 
   public void init() {
@@ -16,6 +17,7 @@ public class ApplicationManager {
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     wd.get("http://localhost/addressbook/group.php");
     groupHelper = new GroupHelper(wd);
+    contactHelper = new ContactHelper(wd);
     navigationHelper = new NavigationHelper(wd);
     sessionHelper = new SessionHelper(wd);
     sessionHelper.login("admin", "secret");
@@ -26,8 +28,8 @@ public class ApplicationManager {
   }
 
 
-  public void returnToGroupPage(By group_page) {
-    wd.findElement(group_page).click();
+  public void returnToGroupPage() {
+    navigationHelper.gotoGroupPage();
   }
 
   public GroupHelper getGroupHelper() {
@@ -37,4 +39,9 @@ public class ApplicationManager {
   public NavigationHelper getNavigationHelper() {
     return navigationHelper;
   }
+
+  public ContactHelper getContactHelper() {
+    return contactHelper;
+  }
+
 }
