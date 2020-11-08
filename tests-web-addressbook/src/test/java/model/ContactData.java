@@ -1,6 +1,6 @@
-package tests;
+package model;
 
-public class NewContact {
+public class ContactData {
   private final String firstname;
   private final String middlename;
   private final String lastname;
@@ -14,8 +14,9 @@ public class NewContact {
   private final String bday;
   private final String byear;
   private final String bmonth;
+  private String group;
 
-  public NewContact(String firstname, String middlename, String lastname, String nickname, String company, String address, String homephone, String mobile, String workphone, String email, String bday, String byear, String bmonth) {
+  public ContactData(String firstname, String middlename, String lastname, String nickname, String company, String address, String homephone, String mobile, String workphone, String email, String bday, String byear, String bmonth, String group) {
     this.firstname = firstname;
     this.middlename = middlename;
     this.lastname = lastname;
@@ -29,6 +30,7 @@ public class NewContact {
     this.bday = bday;
     this.byear = byear;
     this.bmonth = bmonth;
+    this.group = group;
   }
 
   public String getFirstname() {
@@ -75,11 +77,10 @@ public class NewContact {
     return bday;
   }
 
-  public String getByear() {
-    return byear;
-  }
+  public String getByear() { return byear;  }
 
   public String getBmonth() {
     return bmonth;
   }
+  public String getGroup() { return group; }
 }
