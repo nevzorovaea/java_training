@@ -3,9 +3,7 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import model.ContactData;
-import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,8 +63,7 @@ public class ContactHelper extends HelperBase {
 
   }
 
-  public void selectContact(int index) {
-    wd.findElements(By.name("selected[]")).get(index).click();
+  public void selectContact(int i) {
     click(By.name("selected[]"));
   }
 
