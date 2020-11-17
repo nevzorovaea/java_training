@@ -91,17 +91,17 @@ public class ContactHelper extends HelperBase {
   }
 
   public List<ContactData> getContactList() {
-    List<ContactData> contacts = new ArrayList<ContactData>();
-
-
+    List<ContactData> contacts = new ArrayList<>();
     WebElement table  = wd.findElement(By.className("sortcompletecallback-applyZebra"));
     WebElement tbody = table.findElement(By.tagName("tbody"));
     List<WebElement> elements =tbody.findElements(By.tagName("tr"));
+
     //System.out.print("rows: " + elements.size());
 
     for (WebElement element : elements) {
       List<WebElement> cells = element.findElements(By.tagName("td"));
       String name = element.getText();
+      String id = element.findElement(By.tagName("input")).getAttribute("value");
       ContactData contact = new ContactData("Vladimir", null, "Pirogov", null, null, null, null, null, null, null, null, null, null, null);
       contacts.add(contact);
     }
