@@ -19,8 +19,9 @@ public class ContactData {
   private final String bmonth;
   private String group;
 
-   public ContactData(String firstname, String middlename, String lastname, String nickname, String company, String address, String homephone, String mobile, String workphone, String email, String bday, String byear, String bmonth, String group) {
-    this.id = 0;
+
+  public ContactData(String firstname, String middlename, String lastname, String nickname, String company, String address, String homephone, String mobile, String workphone, String email, String bday, String byear, String bmonth, String group) {
+    this.id = Integer.MAX_VALUE;
     this.firstname = firstname;
     this.middlename = middlename;
     this.lastname = lastname;
@@ -126,20 +127,18 @@ public class ContactData {
             ", lastname='" + lastname + '\'' +
             '}';
   }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     ContactData that = (ContactData) o;
-    return id == that.id &&
-            Objects.equals(firstname, that.firstname) &&
+    return Objects.equals(firstname, that.firstname) &&
             Objects.equals(lastname, that.lastname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, firstname, lastname);
+    return Objects.hash(firstname, lastname);
   }
 
 }
