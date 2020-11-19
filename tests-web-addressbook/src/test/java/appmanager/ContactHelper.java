@@ -67,7 +67,7 @@ public class ContactHelper extends HelperBase {
     click(By.name("selected[]"));
   }
 
-  public void initContactModification() {
+  public void initContactModification(int id) {
     click(By.xpath("//img[@alt='Edit']"));
   }
 
@@ -91,21 +91,17 @@ public class ContactHelper extends HelperBase {
   }
 
   public List<ContactData> getContactList() {
-    List<ContactData> contacts = new ArrayList<>();
-    WebElement table  = wd.findElement(By.className("sortcompletecallback-applyZebra"));
-    WebElement tbody = table.findElement(By.tagName("tbody"));
-    List<WebElement> elements = tbody.findElements(By.name("entry"));
 
-    //System.out.print("rows: " + elements.size());       // проверка количества найденных строк
-
+    List<ContactData> contacts = new ArrayList<ContactData>();
+    List<WebElement> elements = super.wd.findElements(By.name("entry"));
     for (WebElement element : elements) {
-      List<WebElement> cells = element.findElements(By.tagName("td"));
-      String name = element.getText();
+      List<WebElement> cells = element.findElements(By.cssSelector("td"));
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      ContactData contact = new ContactData(id,"Vladimir", null, "Pirogov", null, null, null, null, null, null, null, null, null, null, null);
+      String firstname = cells.get(2).getText();
+      String lastname = cells.get(1).getText();
+      ContactData contact = new ContactData(id, firstname, null, lastname, null, null,null, null, null, null, null, null, null, null, null);
       contacts.add(contact);
     }
-    //System.out.print("    contacts: " + contacts.size());    // проверка количества найденных контактов
 
     return contacts;
   }
