@@ -63,12 +63,12 @@ public class ContactHelper extends HelperBase {
 
   }
 
-  public void selectContact(int i) {
-    click(By.name("selected[]"));
+  public void selectContact(int index) {
+    wd.findElements(By.name("selected[]")).get(index).click();
   }
 
-  public void initContactModification(int id) {
-    click(By.xpath("//img[@alt='Edit']"));
+  public void initContactModification(int index) {
+    click(By.xpath("//a[@href='edit.php?id="+ index +"']"));
   }
 
   public void submitContactModification() {
