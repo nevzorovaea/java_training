@@ -43,14 +43,14 @@ public class ApplicationManager {
 
 
   public void returnToGroupPage() {
-    navigationHelper.gotoGroupPage();
+    navigationHelper.groupPage();
   }
 
-  public GroupHelper getGroupHelper() {
+  public GroupHelper group() {
     return groupHelper;
   }
 
-  public NavigationHelper getNavigationHelper() {
+  public NavigationHelper goTo() {
     return navigationHelper;
   }
 
