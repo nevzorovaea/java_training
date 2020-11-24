@@ -1,12 +1,13 @@
 package appmanager;
 
+import model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import model.ContactData;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -29,17 +30,17 @@ public class ContactHelper extends HelperBase {
     type(By.name("lastname"), contactData.getLastname());
     //type(By.name("nickname"), contactData.getNickname());
     //type(By.name("company"), contactData.getCompany());
-   // type(By.name("address"), contactData.getAddress());
-   // type(By.name("home"), contactData.getHomephone());
-   // type(By.name("mobile"), contactData.getMobile());
-   // type(By.name("work"), contactData.getWorkphone());
-   // type(By.name("email"), contactData.getEmail());
-   // click(By.name("bday"));
+    // type(By.name("address"), contactData.getAddress());
+    // type(By.name("home"), contactData.getHomephone());
+    // type(By.name("mobile"), contactData.getMobile());
+    // type(By.name("work"), contactData.getWorkphone());
+    // type(By.name("email"), contactData.getEmail());
+    // click(By.name("bday"));
     //new Select(wd.findElement(By.name("bday"))).selectByVisibleText(contactData.getBday());
-   //click(By.name("bday"));
+    //click(By.name("bday"));
     //lick(By.name("bmonth"));
     //new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(contactData.getBmonth());
-   //click(By.name("bmonth"));
+    //click(By.name("bmonth"));
     //type(By.name("byear"), contactData.getByear());
 
     //if (creation) {
@@ -63,12 +64,12 @@ public class ContactHelper extends HelperBase {
 
   }
 
-  public void selectContact(int index) {
-    wd.findElements(By.name("selected[]")).get(index).click();
+  public void selectContactById(int id) {
+    wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
   }
 
-  public void initContactModification(int index) {
-    wd.findElements(By.cssSelector("img[alt='Edit']")).get(index).click();
+  public void initContactModification(int id) {
+    click(By.xpath("//a[@href='edit.php?id=" + id + "']"));
   }
 
   public void submitContactModification() {
@@ -81,14 +82,16 @@ public class ContactHelper extends HelperBase {
     submitNewContact("(//input[@name='submit'])[2]");
     returnToHomePageContact();
   }
-  public void modify(int index, ContactData contact) {
-    initContactModification(index);
+
+  public void modify(ContactData contact) {
+    initContactModification(contact.getId());
     fillContactForm(contact);
     submitContactModification();
     returnToHomePageContact();
   }
-  public void delete(int index) {
-    selectContact(index);
+
+  public void delete(ContactData contact) {
+    selectContactById(contact.getId());
     deleteSelectedContacts();
     returnToHomePageContact();
   }
@@ -102,9 +105,9 @@ public class ContactHelper extends HelperBase {
     return wd.findElements(By.name("selected[]")).size();
   }
 
-  public List<ContactData> list() {
 
-    List<ContactData> contacts = new ArrayList<ContactData>();
+  public Set<ContactData> all() {
+    Set<ContactData> contacts = new HashSet<ContactData>();
     List<WebElement> elements = super.wd.findElements(By.name("entry"));
     for (WebElement element : elements) {
       List<WebElement> cells = element.findElements(By.cssSelector("td"));
@@ -116,4 +119,5 @@ public class ContactHelper extends HelperBase {
 
     return contacts;
   }
+
 }
