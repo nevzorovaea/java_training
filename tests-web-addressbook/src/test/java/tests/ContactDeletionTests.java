@@ -10,7 +10,7 @@ import java.util.List;
 public class ContactDeletionTests extends TestBase {
   protected FirefoxDriver wd;
 
-  @Test
+  @Test (enabled = false)
   public void testContactDeletion()  {
     app.getNavigationHelper().gotoHomePage();
     if (! app.getContactHelper().isThereAContact()) {
