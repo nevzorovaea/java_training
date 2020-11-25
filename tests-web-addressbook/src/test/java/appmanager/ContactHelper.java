@@ -1,13 +1,12 @@
 package appmanager;
 
 import model.ContactData;
+import model.Contacts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -106,8 +105,8 @@ public class ContactHelper extends HelperBase {
   }
 
 
-  public Set<ContactData> all() {
-    Set<ContactData> contacts = new HashSet<ContactData>();
+  public Contacts all() {
+    Contacts contacts = new Contacts();
     List<WebElement> elements = super.wd.findElements(By.name("entry"));
     for (WebElement element : elements) {
       List<WebElement> cells = element.findElements(By.cssSelector("td"));
@@ -116,7 +115,6 @@ public class ContactHelper extends HelperBase {
       String lastname = cells.get(1).getText();
       contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname));
     }
-
     return contacts;
   }
 
