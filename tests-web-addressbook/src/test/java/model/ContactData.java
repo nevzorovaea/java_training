@@ -10,14 +10,25 @@ public class ContactData {
   private String nickname;
   private String company;
   private String address;
-  private String homephone;
   private String mobile;
-  private String workphone;
   private String email;
   private String bday;
   private String byear;
   private String bmonth;
   private String group;
+  private String homephone;
+  private String workphone;
+  private String allPhones;
+
+
+  public String getAllPhones() {
+    return allPhones;
+  }
+
+  public ContactData withAllPhones(String allPhones) {
+    this.allPhones = allPhones;
+    return this;
+  }
 
 
   public ContactData withId(int id) {
@@ -131,4 +142,15 @@ public class ContactData {
             '}';
   }
 
+  public String getHomephone() {
+    return homephone;
+  }
+
+  public String getMobile() {
+    return mobile;
+  }
+
+  public String getWorkphone() {
+    return workphone;
+  }
 }
