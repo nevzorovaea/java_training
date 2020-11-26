@@ -19,6 +19,9 @@ public class ContactData {
   private String homephone;
   private String workphone;
   private String allPhones;
+  private String email2;
+  private String email3;
+  private String allEmail;
 
 
   public String getAllPhones() {
@@ -29,7 +32,6 @@ public class ContactData {
     this.allPhones = allPhones;
     return this;
   }
-
 
   public ContactData withId(int id) {
     this.id = id;
@@ -86,6 +88,19 @@ public class ContactData {
     return this;
   }
 
+  public ContactData withEmail2(String email2) {
+    this.email2 = email2;
+    return this;
+  }
+  public ContactData withEmail3(String email3) {
+    this.email3 = email3;
+    return this;
+  }
+  public ContactData withAllEmail(String allEmail) {
+    this.allEmail = allEmail;
+    return this;
+  }
+
   public ContactData withBday(String bday) {
     this.bday = bday;
     return this;
@@ -118,6 +133,38 @@ public class ContactData {
     return lastname;
   }
 
+  public String getAddress() {
+    return address;
+  }
+
+  public String getHomephone() {
+    return homephone;
+  }
+
+  public String getMobile() {
+    return mobile;
+  }
+
+  public String getWorkphone() {
+    return workphone;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+  public String getEmail2() {
+    return email2;
+  }
+
+  public String getEmail3() {
+    return email3;
+  }
+
+  public String getAllEmail() {
+    return allEmail;
+  }
+
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -142,15 +189,4 @@ public class ContactData {
             '}';
   }
 
-  public String getHomephone() {
-    return homephone;
-  }
-
-  public String getMobile() {
-    return mobile;
-  }
-
-  public String getWorkphone() {
-    return workphone;
-  }
 }
