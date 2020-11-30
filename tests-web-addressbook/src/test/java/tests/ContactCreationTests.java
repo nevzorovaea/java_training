@@ -2,7 +2,6 @@ package tests;
 
 import model.ContactData;
 import model.Contacts;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.File;
