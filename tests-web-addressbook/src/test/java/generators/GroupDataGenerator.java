@@ -69,7 +69,6 @@ public class GroupDataGenerator {
     writer.write(xml);
     writer.close();
 
-
   }
 
   private void saveAsCsv(List<GroupData> groups, File file) throws IOException {
