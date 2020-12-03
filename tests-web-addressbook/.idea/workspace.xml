@@ -91,7 +91,7 @@
       <recent name="ru.training.java_training.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTests">
+  <component name="RunManager" selected="Gradle.GroupCreationTests">
     <configuration name="ContactCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -107,27 +107,6 @@
           </list>
         </option>
         <option name="vmOptions" value="-Dbrowser=firefox" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.ContactDeletionTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
@@ -187,7 +166,28 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":testGroups" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GroupCreationTests.testGroupCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;tests.GroupCreationTests.testGroupCreation&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":testGroups" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -198,19 +198,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.ContactDeletionTests" />
       <item itemvalue="Gradle.ContactModificationTests" />
       <item itemvalue="Gradle.CreationNewContact" />
       <item itemvalue="Gradle.GroupCreationTests" />
       <item itemvalue="Gradle.ContactCreationTests" />
+      <item itemvalue="Gradle.GroupCreationTests.testGroupCreation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactCreationTests" />
         <item itemvalue="Gradle.GroupCreationTests" />
+        <item itemvalue="Gradle.ContactCreationTests" />
+        <item itemvalue="Gradle.GroupCreationTests.testGroupCreation" />
         <item itemvalue="Gradle.ContactModificationTests" />
         <item itemvalue="Gradle.CreationNewContact" />
-        <item itemvalue="Gradle.ContactDeletionTests" />
       </list>
     </recent_temporary>
   </component>
