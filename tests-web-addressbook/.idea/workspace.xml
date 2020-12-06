@@ -91,7 +91,24 @@
       <recent name="ru.training.java_training.addressbook" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.HbConnectionTest">
+    <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="tests-web-addressbook.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ContactCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HbConnectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="tests-web-addressbook.test" />
       <extension name="coverage">
@@ -112,6 +129,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.HbConnectionTest" />
+        <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="Gradle.HbConnectionTest" />
       </list>
     </recent_temporary>

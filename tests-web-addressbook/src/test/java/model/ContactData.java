@@ -1,42 +1,98 @@
 package model;
 
 import com.google.gson.annotations.Expose;
-import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
 import java.util.Objects;
 
+@Entity
+@Table(name = "addressbook")
 public class ContactData {
+
+  @Id
+  @Column(name = "id")
   private int id = Integer.MAX_VALUE;
+
   @Expose
+  @Column(name = "firstname")
   private String firstname;
+
   private String middlename;
+
   @Expose
+  @Column(name = "lastname")
   private String lastname;
+
+  @Transient
   private String nickname;
+
+  @Transient
   private String company;
+
+  @Transient
   private String address;
+
+  @Column(name = "mobile")
+  @Type(type = "text")
   private String mobile;
+
+  @Transient
   private String email;
+
+  @Transient
   private String bday;
+
+  @Transient
   private String byear;
+
+  @Transient
   private String bmonth;
+
+  @Transient
   private String group;
-  private String homephone;
-  private String workphone;
+
+  @Column(name = "home")
+  @Type(type = "text")
+  private String home;
+
+  @Column(name = "work")
+  @Type(type = "text")
+  private String work;
+
+  @Transient
   private String allPhones;
+
+  @Transient
   private String email2;
+
+  @Transient
   private String email3;
+
+  @Transient
   private String allEmail;
-  private File photo;
+
+  @Column(name = "photo")
+  @Type(type = "text")
+  private String photo;
 
 
   public File getPhoto() {
-    return photo;
+    return new File(photo);
+  }
+
+  @Override
+  public String toString() {
+    return "ContactData{" +
+            "id=" + id +
+            ", firstname='" + firstname + '\'' +
+            ", lastname='" + lastname + '\'' +
+            '}';
   }
 
   public ContactData withPhoto(File photo) {
-    this.photo = photo;
+    this.photo = photo.getPath();
     return this;
   }
 
@@ -85,7 +141,7 @@ public class ContactData {
   }
 
   public ContactData withHomephone(String homephone) {
-    this.homephone = homephone;
+    this.home = homephone;
     return this;
   }
 
@@ -95,7 +151,7 @@ public class ContactData {
   }
 
   public ContactData withWorkphone(String workphone) {
-    this.workphone = workphone;
+    this.work = workphone;
     return this;
   }
 
@@ -108,10 +164,12 @@ public class ContactData {
     this.email2 = email2;
     return this;
   }
+
   public ContactData withEmail3(String email3) {
     this.email3 = email3;
     return this;
   }
+
   public ContactData withAllEmail(String allEmail) {
     this.allEmail = allEmail;
     return this;
@@ -153,21 +211,22 @@ public class ContactData {
     return address;
   }
 
-  public String getHomephone() {
-    return homephone;
+  public String getHome() {
+    return home;
   }
 
   public String getMobile() {
     return mobile;
   }
 
-  public String getWorkphone() {
-    return workphone;
+  public String getWork() {
+    return work;
   }
 
   public String getEmail() {
     return email;
   }
+
   public String getEmail2() {
     return email2;
   }
@@ -194,15 +253,6 @@ public class ContactData {
   @Override
   public int hashCode() {
     return Objects.hash(id, firstname, lastname);
-  }
-
-  @Override
-  public String toString() {
-    return "ContactData{" +
-            "id='" + id + '\'' +
-            ", firstname='" + firstname + '\'' +
-            ", lastname='" + lastname + '\'' +
-            '}';
   }
 
 }
