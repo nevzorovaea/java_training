@@ -6,8 +6,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.junit.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -16,7 +16,6 @@ public class HbConnectionTest {
   private SessionFactory sessionFactory;
 
   @BeforeClass
-
   protected void setUp() throws Exception {
     // A SessionFactory is set up once for an application!
     final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
@@ -25,26 +24,24 @@ public class HbConnectionTest {
     try {
       sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
     } catch (Exception e) {
-      e.printStackTrace();
       // The registry would be destroyed by the SessionFactory, but we had trouble building the SessionFactory
       // so destroy it manually.
-      System.out.println("!!!!!");
       e.printStackTrace();
+      System.out.println("!!!");
       StandardServiceRegistryBuilder.destroy(registry);
     }
   }
 
-
   @Test
-  public void testHbConnection() {
-    Session openSession = sessionFactory.openSession();
-    openSession.beginTransaction();
-    List result = openSession.createQuery("from GroupData").list();
-    for (GroupData group : (List<GroupData>) result) {
+  public void HbConnection() {
+    Session session = sessionFactory.openSession();
+    session.beginTransaction();
+    List<GroupData> result = session.createQuery("from GroupData").list();
+    for (GroupData group : result) {
       System.out.println(group);
     }
-    openSession.getTransaction().commit();
-    openSession.close();
+    session.getTransaction().commit();
+    session.close();
 
   }
 }
