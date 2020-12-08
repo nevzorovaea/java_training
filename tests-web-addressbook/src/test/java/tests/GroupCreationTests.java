@@ -64,10 +64,10 @@ public class GroupCreationTests extends TestBase {
     app.group().create(group);
     assertThat(app.group().count(), equalTo(before.size() + 1));
     Groups after = app.db().groups();
-    Groups actual = after;
-    Groups expected = before.withAdded(group
-            .withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()));
-    Assert.assertEquals(expected,actual);
+    // Groups actual = after;
+   //  Groups expected = before.withAdded(group
+      //     .withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()));
+   //  Assert.assertEquals(expected,actual);
     assertThat(after, equalTo(
             before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 

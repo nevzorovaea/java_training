@@ -1,5 +1,6 @@
 .gradle
 build/
+out/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -16,4 +17,5 @@ sandbox/.idea/workspace.xml
 *.log
 *.xml
 *.xml
+tests-web-addressbook/.idea/workspace.xml
 tests-web-addressbook/.idea/workspace.xml
