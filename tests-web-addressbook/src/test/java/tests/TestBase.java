@@ -1,6 +1,10 @@
 package tests;
 
 import appmanager.ApplicationManager;
+import model.GroupData;
+import model.Groups;
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.junit.Before;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
@@ -12,12 +16,16 @@ import org.testng.annotations.BeforeSuite;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
+import java.util.stream.Collectors;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class TestBase {
 
   Logger logger = LoggerFactory.getLogger(TestBase.class);
 
-  protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser",BrowserType.CHROME));
+  protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
 
   @BeforeSuite
@@ -31,7 +39,7 @@ public class TestBase {
   }
 
   @BeforeMethod
-    public void logTestStart(Method m, Object[] p) {
+  public void logTestStart(Method m, Object[] p) {
     logger.info("Start test" + m.getName() + "with parameters" + Arrays.asList(p));
 
   }
@@ -42,4 +50,13 @@ public class TestBase {
 
   }
 
+  public void verifyGroupListInUI() {
+    if (Boolean.getBoolean("verifyUI")) {
+      Groups dbGroups = app.db().groups();
+      Groups uiGroups = app.group().all();
+      assertThat(uiGroups, equalTo(dbGroups.stream()
+              .map((g) -> new GroupData().withId(g.getId()).withName(g.getName()))
+              .collect(Collectors.toSet())));
+    }
+  }
 }
