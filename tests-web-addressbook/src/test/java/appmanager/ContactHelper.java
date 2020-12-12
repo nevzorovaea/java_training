@@ -2,9 +2,11 @@ package appmanager;
 
 import model.ContactData;
 import model.Contacts;
+import model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -60,6 +62,12 @@ public class ContactHelper extends HelperBase {
     click(By.linkText("add new"));
   }
 
+  public void addContacToGroup(ContactData contact, GroupData group) {
+    selectContactById(contact.getId());
+    new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(group.getName());
+    click(By.name("add"));
+  }
+
   public void deleteSelectedContacts() {
     click(By.xpath("//input[@value='Delete']"));
     wd.switchTo().alert().accept();
@@ -100,6 +108,7 @@ public class ContactHelper extends HelperBase {
     contactCache = null;
     returnToHomePageContact();
   }
+
   public int count() {
     return super.count();
   }
@@ -154,4 +163,18 @@ public class ContactHelper extends HelperBase {
             withMobile(mobile).withWorkphone(work).withAddress(address).withEmail(email).withEmail2(email2).withEmail3(email3);
   }
 
+  public void removeContactFromGroup(ContactData contact, GroupData group) {
+    selectDisplayGroup(group.getName());
+    selectContactById(contact.getId());
+    removeFromGroup(group.getName());
+  }
+
+  private void removeFromGroup(String name) {
+    click(By.name("remove"));
+  }
+
+  public void selectDisplayGroup(String name) {
+    new Select(wd.findElement(By.name("group"))).selectByVisibleText(name);
+  }
 }
+
