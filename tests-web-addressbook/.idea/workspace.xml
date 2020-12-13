@@ -23,13 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a065d80-7601-410f-af0c-f7c8c51a5102" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AddContactToGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DeleteContactFromTheGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/ContactHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/appmanager/ContactHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appmanager/ContactHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +33,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../mantis-tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
@@ -52,7 +51,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="tests-web-addressbook" type="f1a62948:ProjectNode" />
+                <item name="mantis-tests" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -86,8 +85,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -97,6 +96,11 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="appmanager" />
       <recent name="ru.training.java_training.addressbook" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vladi\Training\java_training\mantis-tests\src\test\java\ru\stqa\pft\mantis\appmanager" />
+      <recent name="C:\Users\vladi\Training\java_training\mantis-tests\src\test\java\ru\stqa\pft\mantis\tests" />
+      <recent name="C:\Users\vladi\Training\java_training\mantis-tests\src\test\resources" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.DeleteContactFromTheGroup">
