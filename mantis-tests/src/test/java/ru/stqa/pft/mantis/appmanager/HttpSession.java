@@ -36,6 +36,7 @@ public class HttpSession {
     String body = geTextFrom(response);
     return body.contains(String.format("<span class=\"user-info\">%s</span>", username));
   }
+
   private String geTextFrom(CloseableHttpResponse response) throws IOException {
     try {
       return EntityUtils.toString(response.getEntity());
@@ -43,13 +44,15 @@ public class HttpSession {
       response.close();
     }
   }
+
   public boolean isLoggedInAs(String username) throws IOException {
     HttpGet get = new HttpGet(app.getProperty("web.baseUrl") + "/index.php");
     CloseableHttpResponse response = httpclient.execute(get);
     String body = geTextFrom(response);
-    return body.contains(String.format("<span class=\"label hidden-xs label-default arrowed\">%s</span>", username));
-
-    //return body.contains(String.format("<span class=\"user-info\">%s</span>", username));
-    //return body.contains(String.format("<span class=\"italic\">%s</span>", username));
+    return body.contains(String.format("<li><i class=\"fa fa-user home-icon active\"></i>  <a href=\"/mantisbt-2.24.3/account_page.php\">%s", username));
   }
+  //return body.contains(String.format("<span class=\"label hidden-xs label-default arrowed\">%s</span>", username));
+  //return body.contains(String.format("<span class=\"user-info\">%s</span>", username));
+  //return body.contains(String.format("<span class=\"italic\">%s</span>", username));
 }
+

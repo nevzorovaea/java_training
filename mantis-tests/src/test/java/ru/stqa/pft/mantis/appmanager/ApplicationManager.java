@@ -20,6 +20,7 @@ public class ApplicationManager {
   private RegistrationHelper registrationHelper;
   private FtpHelper ftp;
   private MailHelper mailHelper;
+  private ChangePasswordHelper changePasswordHelper;
 
 
   public ApplicationManager(String browser) {
@@ -80,6 +81,13 @@ public class ApplicationManager {
       mailHelper = new MailHelper(this);
     }
     return mailHelper;
+  }
+
+  public ChangePasswordHelper getChangePasswordHelper() {
+        if (changePasswordHelper == null){
+      changePasswordHelper = new ChangePasswordHelper(this);
+    }
+    return changePasswordHelper;
   }
 }
 
