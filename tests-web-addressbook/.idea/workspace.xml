@@ -113,7 +113,7 @@
       <recent name="ru.stqa.pft.mantis.model" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SoapTests.testCreateIssue">
+  <component name="RunManager" selected="TestNG.SoapTests">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -228,8 +228,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SoapTests.testCreateIssue" />
         <item itemvalue="TestNG.SoapTests" />
+        <item itemvalue="TestNG.SoapTests.testCreateIssue" />
         <item itemvalue="TestNG.ChangePasswordTest" />
         <item itemvalue="TestNG.RegistrationTests" />
         <item itemvalue="TestNG.LoginTests" />
