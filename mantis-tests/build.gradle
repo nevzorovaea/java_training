@@ -14,7 +14,7 @@ dependencies {
     implementation 'commons-net:commons-net:3.7.2'
     implementation 'org.subethamail:subethasmtp:3.1.7'
     implementation 'ru.lanwen.verbalregex:java-verbal-expressions:1.6'
-
+    compile 'biz.futureware.mantis:mantis-axis-soap-client:1.2.19'
 }
 test {
     useTestNG {

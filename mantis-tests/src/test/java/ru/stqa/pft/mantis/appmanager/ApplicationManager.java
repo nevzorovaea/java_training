@@ -21,6 +21,7 @@ public class ApplicationManager {
   private FtpHelper ftp;
   private MailHelper mailHelper;
   private ChangePasswordHelper changePasswordHelper;
+  private SoapHelper soapHelper;
 
 
   public ApplicationManager(String browser) {
@@ -53,6 +54,7 @@ public class ApplicationManager {
     }
     return registrationHelper;
   }
+
   public FtpHelper ftp() {
     if (ftp == null) {
       ftp = new FtpHelper(this);
@@ -84,10 +86,17 @@ public class ApplicationManager {
   }
 
   public ChangePasswordHelper getChangePasswordHelper() {
-        if (changePasswordHelper == null){
+    if (changePasswordHelper == null) {
       changePasswordHelper = new ChangePasswordHelper(this);
     }
     return changePasswordHelper;
+  }
+
+  public SoapHelper soap() {
+    if (soapHelper == null) {
+      soapHelper = new SoapHelper(this);
+    }
+    return soapHelper;
   }
 }
 
