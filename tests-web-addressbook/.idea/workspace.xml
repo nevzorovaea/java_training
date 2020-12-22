@@ -119,6 +119,9 @@
       <recent name="ru.stqa.pft.mantis" />
       <recent name="ru.stqa.pft.mantis.model" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.stqa.pft.rest" />
+    </key>
   </component>
   <component name="RunManager" selected="Gradle.RestTests">
     <configuration name="RestTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
