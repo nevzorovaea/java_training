@@ -1,0 +1,41 @@
+apply plugin: 'java'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.3.0'
+}
+test {
+    useTestNG()
+}
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'no.nils:wsdl2java:0.12'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'no.nils.wsdl2java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:+'
+}
+
+wsdl2java {
+
+    wsdlsToGenerate = [
+            ['-p', 'com.acme.mypackage', '-autoNameResolution', "$projectDir/src/main/resources/ipservice.wsdl"]
+    ]
+    wsdlDir = file("$projectDir/src/main/resources")
+}
