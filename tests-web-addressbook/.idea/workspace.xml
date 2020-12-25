@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a065d80-7601-410f-af0c-f7c8c51a5102" name="Default Changelist" comment="" />
+    <list default="true" id="1a065d80-7601-410f-af0c-f7c8c51a5102" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +54,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/../mantis-tests">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/../rest-sample">
           <activation />
         </task>
         <projects_view>
@@ -126,34 +131,13 @@
       <recent name="ru.stqa.pft.rest" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GithubTests">
+  <component name="RunManager" selected="TestNG.SquareTests">
     <configuration name="GithubTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../github-sample" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.github.GithubTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RestTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../rest-sample" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.rest.RestTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -239,20 +223,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SquareTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.Training.java_training.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.Training.java_training.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.Training.java_training.sandbox.SquareTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Gradle.RestTests" />
+      <item itemvalue="Gradle.GithubTests" />
       <item itemvalue="TestNG.RestTests" />
       <item itemvalue="TestNG.RestAssuredTests" />
       <item itemvalue="TestNG.LoginTests" />
-      <item itemvalue="Gradle.GithubTests" />
+      <item itemvalue="TestNG.SquareTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SquareTests" />
         <item itemvalue="Gradle.GithubTests" />
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.RestAssuredTests" />
         <item itemvalue="TestNG.RestTests" />
-        <item itemvalue="Gradle.RestTests" />
       </list>
     </recent_temporary>
   </component>
