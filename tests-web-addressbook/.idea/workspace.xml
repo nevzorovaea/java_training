@@ -22,37 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a065d80-7601-410f-af0c-f7c8c51a5102" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build1.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/ApplicationManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/ContactHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/DbHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/GroupHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/HelperBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/NavigationHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/SessionHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/generators/ContactDataGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/generators/GroupDataGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/model/ContactData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/model/Contacts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/model/GroupData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/model/Groups.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactAddressTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactCreationTests$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactCreationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactDeletionTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactEmailTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactModificationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactPhoneTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/DbConnectionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/GroupCreationTests$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/GroupCreationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/GroupDeletionTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/GroupModificationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/HbConnectionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/TestBase.class" beforeDir="false" />
-    </list>
+    <list default="true" id="1a065d80-7601-410f-af0c-f7c8c51a5102" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
