@@ -23,8 +23,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a065d80-7601-410f-af0c-f7c8c51a5102" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../sandbox/src/test/java/ru/Training/java_training/sandbox/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sandbox/src/test/java/ru/Training/java_training/sandbox/SquareTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build1.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/ApplicationManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/ContactHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/DbHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/GroupHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/HelperBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/NavigationHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/appmanager/SessionHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/generators/ContactDataGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/generators/GroupDataGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/model/ContactData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/model/Contacts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/model/GroupData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/model/Groups.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactAddressTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactCreationTests$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactCreationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactDeletionTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactEmailTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactModificationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/ContactPhoneTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/DbConnectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/GroupCreationTests$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/GroupCreationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/GroupDeletionTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/GroupModificationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/HbConnectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/TestBase.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +159,7 @@
       <recent name="ru.stqa.pft.rest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SquareTests">
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
     <configuration name="GithubTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,6 +200,23 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="tests-web-addressbook.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GroupCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
@@ -207,23 +251,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rest-sample.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SquareTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
@@ -243,18 +270,18 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.GithubTests" />
-      <item itemvalue="TestNG.RestTests" />
       <item itemvalue="TestNG.RestAssuredTests" />
       <item itemvalue="TestNG.LoginTests" />
       <item itemvalue="TestNG.SquareTests" />
+      <item itemvalue="TestNG.GroupCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.SquareTests" />
         <item itemvalue="Gradle.GithubTests" />
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.RestAssuredTests" />
-        <item itemvalue="TestNG.RestTests" />
       </list>
     </recent_temporary>
   </component>
@@ -280,16 +307,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/GroupCreationTests.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
