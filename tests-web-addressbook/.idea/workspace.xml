@@ -23,6 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a065d80-7601-410f-af0c-f7c8c51a5102" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../sandbox/src/test/java/ru/Training/java_training/sandbox/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sandbox/src/test/java/ru/Training/java_training/sandbox/SquareTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
