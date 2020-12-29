@@ -1,9 +1,6 @@
 package appmanager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -55,38 +52,41 @@ public class ApplicationManager {
       capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "win10")));
       wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
     }
-      wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-      wd.get(properties.getProperty("web.baseUrl"));
-      groupHelper = new GroupHelper(wd);
-      contactHelper = new ContactHelper(wd);
-      navigationHelper = new NavigationHelper(wd);
-      sessionHelper = new SessionHelper(wd);
-      sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
-    }
-
-    public void stop () {
-      wd.quit();
-    }
-
-
-    public void returnToGroupPage () {
-      navigationHelper.groupPage();
-    }
-
-    public GroupHelper group () {
-      return groupHelper;
-    }
-
-    public NavigationHelper goTo () {
-      return navigationHelper;
-    }
-
-    public ContactHelper contact () {
-      return contactHelper;
-    }
-
-    public DbHelper db () {
-      return dbHelper;
-    }
-
+    wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+    wd.get(properties.getProperty("web.baseUrl"));
+    groupHelper = new GroupHelper(wd);
+    contactHelper = new ContactHelper(wd);
+    navigationHelper = new NavigationHelper(wd);
+    sessionHelper = new SessionHelper(wd);
+    sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
   }
+
+  public void stop() {
+    wd.quit();
+  }
+
+
+  public void returnToGroupPage() {
+    navigationHelper.groupPage();
+  }
+
+  public GroupHelper group() {
+    return groupHelper;
+  }
+
+  public NavigationHelper goTo() {
+    return navigationHelper;
+  }
+
+  public ContactHelper contact() {
+    return contactHelper;
+  }
+
+  public DbHelper db() {
+    return dbHelper;
+  }
+
+  public byte[] takeScreenshot() {
+    return ((TakesScreenshot) wd).getScreenshotAs(OutputType.BYTES);
+  }
+}
