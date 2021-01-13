@@ -23,11 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a065d80-7601-410f-af0c-f7c8c51a5102" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/resources/testng-groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/testng-groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HbConnectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,11 +110,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
@@ -141,28 +142,7 @@
       <recent name="ru.stqa.pft.rest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests">
-    <configuration name="GithubTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../github-sample" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.github.GithubTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.GroupTests">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -199,16 +179,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
+    <configuration name="GroupTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="tests-web-addressbook.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="PATTERN" value="bdd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.LoginTests" />
+      <option name="PACKAGE_NAME" value="bdd" />
+      <option name="MAIN_CLASS_NAME" value="bdd.GroupTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -216,16 +196,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestAssuredTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rest-sample.test" />
+    <configuration name="HbConnectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="tests-web-addressbook.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.HbConnectionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -251,19 +231,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.GithubTests" />
-      <item itemvalue="TestNG.RestAssuredTests" />
-      <item itemvalue="TestNG.LoginTests" />
       <item itemvalue="TestNG.SquareTests" />
       <item itemvalue="TestNG.GroupCreationTests" />
+      <item itemvalue="TestNG.GroupTests" />
+      <item itemvalue="TestNG.HbConnectionTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupTests" />
+        <item itemvalue="TestNG.HbConnectionTest" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.SquareTests" />
-        <item itemvalue="Gradle.GithubTests" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.RestAssuredTests" />
       </list>
     </recent_temporary>
   </component>
